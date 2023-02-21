@@ -1,66 +1,72 @@
-<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <meta name="author" content="E. Contiero" />
-    <meta name="description" content="This is a wonderful web page" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="profileStyle.css" rel="stylesheet" />
-    <style>
-        li{
-            background-color: #eee;
-            color: #92d;
-        }
-        </style>
-    <title>My Profile</title>
-</head>
-<body class="container">
-    <main>
-        <nav class="flex-container">
-            <a class="btn btn-danger" href="index.html">Go to profile</a>
-            <a href="projects.html">Go to projects</a>
-            <a href="https://linkedin.com/in/elzacontiero/" target="_blank">My LinkedIn</a>
-        </nav>
-        <header>
-            <img alt="My picture" src="Elza.png" width="200px">
-            <h1>Elza Contiero</h1>
-            <h2>My Profile</h2>
-            <p>Experimenting <em>with</em> HTML and <strong>CSS</strong>.</p>
-            <p>An <em>awesome</em> and <strong>amazing</strong> website demonstration.</p>
-        </header>
-        <section class="box-1">
-            <h4>My Skills</h4>
-            <p>Java, Git, Python, Agile, Jira</p>
-        </section>
-        <section id="hobbies" class="box-2">
-            <h4>Hobbies</h4>
-            <ul>
-                <li>Trekking</li>
-                <li style="color:rgb(30, 255, 64);">Running</li>
-                <li id="music">Playing Music</li>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6ab4126675.js" crossorigin="anonymous"></script>
+  </head>
+  <body style="background-image: url('background.jpeg'); background-size: cover;">
+      <div class="container">
+        <!-- MENU  -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #444444;">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-house"></i> Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/elzacontiero"><i class="fa-brands fa-github"></i> Github Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/elzacontiero/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+              </li>
             </ul>
-        </section>
-        <section>
-            <h4>Goals</h4>
-            <ol>
-                <li>Become a Fullstack Developer at Sparta</li>
-                <li>Do another Master Degree (Computer Science)</li>
-                <li>Run the London Marathon</li>
-            </ol>
-        </section>
-        <section>
-            <h3>Search for News</h3>
-            <form action="https://www.bbc.co.uk/search">
-                <label for="mysearch">Search for:</label>
-                <input id="mysearch" name="q" type="text" value="Surrey">
-                <input class="button" type="submit" value="Submit">
-            </form>
-        </section>
-        <footer>
-        <small>Copyright &#169; Sparta Global 2023 <cite>E. Contiero</cite></small>
-        </footer>
-    </main>
-    
-</body>
+          </div>
+        </nav>
+      
+        <div class="container text-left">
+          <div class="row align-items-start">
+            <div class="col">
+              <img src="./Elza.png" class="rounded float-left" alt="Elza Contiero" width="200" height="310">
+              <h2 style="color: #cccccc">Elza Contiero</h2>      
+
+              <p style="color: #eeeeee">Experimenting <em>with</em> HTML and <strong>CSS</strong>.</p>
+              
+            </div>
+            <div class="col">
+              <h4>My Skills</h4>
+              <p>Java, Bash, Git, Python, Agile, Jira</p>
+              <h4>Hobbies</h4>
+              <ul>
+                  <li>Trekking <i class="fa-sharp fa-solid fa-mountain-sun"></i></li>
+                  <li>Running <img src="icons8-running.gif" /></li>
+                  <li id="music">Playing Music <i class="fa-solid fa-music"></i> </li>
+              </ul>
+              
+              <h4>Goals</h4>
+              <ol>
+                  <li>Become a Fullstack Developer at Sparta</li>
+                  <li>Do another Master Degree (Computer Science)</li>
+                  <li>Run the London Marathon</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        
+        <h3>Search for News</h3>
+        <form action="https://www.bbc.co.uk/search">
+            <label for="mysearch">Search for:</label>
+            <input id="mysearch" name="q" type="text" value="Surrey">
+            <input class="button" type="submit" value="Submit">
+        </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
 </html>
