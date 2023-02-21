@@ -1,0 +1,89 @@
+* {
+    margin: auto;
+    padding: 5%, 12em, 25px, 3px;
+    box-sizing: border-box;
+    border:rgb(4, 11, 104);
+}
+body{
+    background-image:url("https://onlyvectorbackgrounds.com/wp-content/uploads/2018/09/Abstract-Ambient-Light-Background-Day-Blue.jpg");
+    background-color: lightblue;
+    color: rgb(4, 11, 104);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    border-radius: 30%;
+}
+li, h3 {
+    color: dodgerblue;
+    font-size: 1.2em;
+}
+main {
+    margin: auto;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;   /* can also be left-align, right-align, space-between, space-around */
+    justify-content: center;
+    /* gap: 10vw; */
+    height: 150px;
+    background-color: white;
+}
+.flex-container a {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 10px 25px;
+    background-color: white ;
+}
+/* hover state */
+a:hover {
+    /* when we hover over the link the text turns red */
+    color: red;
+}
+
+/* active state*/
+a:active {
+    /* when we click the link it turns green */
+    color: green;
+}
+.box-1
+{
+    background-color: whitesmoke;
+    padding: 0% 10%;
+
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    border-left: 5px red solid;
+    border-right: 5px red solid;
+    border-style: ridge;
+}
+.box-2
+{
+    background-color: wheat;
+    padding: 20px;
+    margin: 10px;
+
+    border: 5px rebeccapurple solid;
+}
+.container
+{
+    width: 1200px;
+    /* auto varies from property to property, with margin it is used for centering */
+    margin: auto;
+}
+.box-1 h4 {
+    font-family:  Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#music {
+
+}
+
+#hobbies {
+    padding: 30px;
+}
