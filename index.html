@@ -4,41 +4,51 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    
+    <!-- [Line 1] add bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- [Line 2] Font Awesome  -->
     <script src="https://kit.fontawesome.com/6ab4126675.js" crossorigin="anonymous"></script>
   </head>
+  <!-- [Line 3] Background Image -->
   <body style="background-image: url('background.jpeg'); background-size: cover;">
+    
+      <!-- [Line 4] Bootstrap MENU  -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #444444;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- [Line 5] The actual elements of menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">        
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-house"></i> Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/elzacontiero"><i class="fa-brands fa-github"></i> Github Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/elzacontiero/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- [Line 6] Bootstrap Container for contents -->
       <div class="container">
-        <!-- MENU  -->
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #444444;">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-house"></i> Profile</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/elzacontiero"><i class="fa-brands fa-github"></i> Github Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/elzacontiero/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      
+        <!-- [Line 7] Bootstrap two columns container -->
         <div class="container text-left">
           <div class="row align-items-start">
+
+            <!-- [Line 8] Bootstrap start of 1st column  -->
             <div class="col">
               <img src="./Elza.png" class="rounded float-left" alt="Elza Contiero" width="200" height="310">
-              <h2 style="color: #cccccc">Elza Contiero</h2>      
-
-              <p style="color: #eeeeee">Experimenting <em>with</em> HTML and <strong>CSS</strong>.</p>
-              
+              <h2 style="color: whitesmoke">Elza Contiero</h2>
+              <p style="color: whitesmoke">Experimenting <em>with</em> HTML and <strong>CSS</strong>.</p>              
             </div>
+
+            <!-- [Line 9] Bootstrap start of 2nd column  -->
             <div class="col">
               <h4>My Skills</h4>
               <p>Java, Bash, Git, Python, Agile, Jira</p>
@@ -59,14 +69,14 @@
           </div>
         </div>
 
-        
-        <h3>Search for News</h3>
+        <!-- [Line 10] Outside the TWO columns container, but inside the main container -->
+        <h3 style="color: whitesmoke">Search for News</h3>
         <form action="https://www.bbc.co.uk/search">
-            <label for="mysearch">Search for:</label>
+            <label for="mysearch" style="color: whitesmoke">Search for:</label>
             <input id="mysearch" name="q" type="text" value="Surrey">
             <input class="button" type="submit" value="Submit">
         </form>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      </div> <!-- End of container -->      
   </body>
 </html>
